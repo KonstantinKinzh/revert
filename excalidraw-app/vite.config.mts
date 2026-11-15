@@ -147,8 +147,12 @@ export default defineConfig(({ mode }) => {
     server: {
       port: Number(envVars.VITE_APP_PORT || 3000),
       // open the browser
+
+      host: "127.0.0.1",
+      strictPort: true,
       open: true,
     },
+    base: process.env.VITE_BASE_PATH || "/",
     // We need to specify the envDir since now there are no
     //more located in parallel with the vite.config.ts file but in parent dir
     envDir: "../",
