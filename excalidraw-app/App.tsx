@@ -99,6 +99,7 @@ import Collab, {
   isOfflineAtom,
   userToFollowAtom,
 } from "./collab/Collab";
+import { Loader } from "./components/Loader";
 import { AppFooter } from "./components/AppFooter";
 import { AppMainMenu } from "./components/AppMainMenu";
 import { AppWelcomeScreen } from "./components/AppWelcomeScreen";
@@ -1035,6 +1036,8 @@ const ExcalidrawWrapper = () => {
           }
         }}
       >
+        <Loader />
+
         <AppMainMenu
           onCollabDialogOpen={onCollabDialogOpen}
           isCollaborating={isCollaborating}
