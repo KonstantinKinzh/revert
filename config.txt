@@ -1,2 +1,0 @@
-author=Kolins
-age=30
